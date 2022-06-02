@@ -4,7 +4,7 @@
   "description": "Custom build of CKEditor 5 for Markditor",
   "version": "0.0.1",
   "license": "MIT",
-  "main": "./build/markditorEditor.js",
+  "main": "./build/markditor-editor.js",
   "devDependencies": {
     "@ckeditor/ckeditor5-autoformat": "^34.1.0",
     "@ckeditor/ckeditor5-autosave": "^34.1.0",

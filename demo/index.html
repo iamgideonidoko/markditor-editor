@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<title>CKEditor 5 ClassicEditor build</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			text-align: center;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			max-width: 1200px;
+			margin: 2rem auto;
+		}
+
+		footer {
+			margin-top: 2rem;
+		}
+	</style>
+</head>
+
+<body data-editor="ClassicEditor" data-collaboration="false" data-revision-history="false">
+
+	<main>
+		<div class="centered">
+			<div class="row row-editor">
+				<div class="editor-container">
+					<div class="editor">
+						<h1>Markditor</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>Markditor</footer>
+	<script src="../build/markditorEditor.js"></script>
+	<script>
+		ClassicEditor
+			.create(document.querySelector('.editor'), {
+				licenseKey: '',
+			})
+			.then(editor => {
+				window.editor = editor;
+			})
+			.catch(error => {
+				console.error('Oops, something went wrong!');
+				console.error(
+					'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:'
+					);
+				console.warn('Build id: ywi6mw3jhty5-xm8s5qxm5pog');
+				console.error(error);
+			});
+	</script>
+</body>
+
+</html>
